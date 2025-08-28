@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar for chat */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #555; /* Darker track for dark mode */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Lighter thumb for dark mode */
+  border-radius: 10px;
+}
+
+/* For light mode */
+html:not(.dark) .custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+html:not(.dark) .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
